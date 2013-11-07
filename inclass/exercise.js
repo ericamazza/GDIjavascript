@@ -55,7 +55,7 @@ function favoriteThings(){
 			emptyString+= listOfFavs[i] + ", ";
 		}
 		else {
-			emptyString+= listOfFavs[i]
+			emptyString+= "and " + listOfFavs[i]
 		}
 		
 	}
@@ -64,6 +64,55 @@ function favoriteThings(){
 
 
 }
+
+
+
+
+function myFriends(){
+	var friendArray = [
+		{	name: "Molly",
+			hair: "brown"
+		},
+		{	name: "caity",
+			hair: "blonde"
+		}
+	]
+
+for (var i = 0; i < friendArray.length; i++){
+	// alert(friendArray[i].name +  " has hair color " + friendArray[i].hair)
+}
+
+}
+
+
+var newImg = document.createElement('img');
+newImg.src = 'http://girldevelopit.com/assets/pink-logo.png';
+document.body.appendChild(newImg);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
