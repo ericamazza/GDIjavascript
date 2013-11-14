@@ -3,6 +3,8 @@
 </head>
 <body>
 
+	<img id="mainpicture">
+
 	<div id="firstDiv">this is my favorite div</div>
 	<div>this is my favorite div1</div>
 	<div>this is my favorite div2</div>
@@ -15,6 +17,10 @@
 	<script>
 
 		$(document).ready(function(){
+
+			var img = $('#mainpicture');
+			img.attr('src', 'http://girldevelopit.com/assets/pink-logo.png');
+			img.css('width', '200px');
 
 			$("#firstDiv").bind({
 				click: function(){
