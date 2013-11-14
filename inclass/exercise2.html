@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>this is a PARAGRAPH</p>
+
+    <div id="myId">This is a DIV with id "myId"!</div>
+
+    <div class="myClass">This is a DIV with class "myClass"!</div>
+    <div>
+        <a href="http://jquery.com/" id="myLink">jQuery</a>
+    </div>
+
+    <button class="button">Hide link</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('p').click(function(){
+                $(this).hide();
+
+            });
+
+            $("#myId").click(function(){
+                $(this).hide();
+            });
+
+            $(".myClass").click(function(){
+                $(this).hide();
+            })
+
+            $(".button").click(function(){
+                $("#myLink").slideToggle();
+            })
+
+            // how do I make slide toggle switch the button text?
+
+
+        });
+
+    </script>
+</body>
+</html>
+            

@@ -1,0 +1,61 @@
+<html>
+<head>
+</head>
+<body>
+
+	<div id="firstDiv">this is my favorite div</div>
+	<div>this is my favorite div1</div>
+	<div>this is my favorite div2</div>
+	<div>this is my favorite div3</div>
+	<div>this is my favorite div4</div>
+	<div>this is my favorite div5</div>
+
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script>
+
+		$(document).ready(function(){
+
+			$("#firstDiv").bind({
+				click: function(){
+					$(this).hide()
+				},
+				mouseenter: function(){
+				$(this).css('background-color','purple')
+				},
+				mouseleave: function(){
+				$(this).css('background-color','orange')
+				}
+			});
+
+
+		// 	$("#firstDiv").click(function(){
+		// 		$(this).hide();
+		// 	});
+
+		// 	$("#firstDiv").mouseenter(function(){
+		// 		$(this).css('background-color','purple')
+
+		// 	});
+
+		// 	$("#firstDiv").mouseleave(function(){
+		// 		$(this).css('background-color','orange')
+
+		// 	});
+
+
+		});	
+		
+		var divs = $("div");
+		//console.log(divs);
+
+		var first = $('#firstDiv');
+		//console.log(first);
+
+
+	
+	</script>
+</body>
+
+
+</html>
